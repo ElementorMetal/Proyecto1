@@ -10,6 +10,8 @@ namespace AutoBanco
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("pedo");
+            Console.ReadKey();
         }
     }
 }
