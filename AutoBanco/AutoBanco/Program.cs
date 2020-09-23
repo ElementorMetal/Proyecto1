@@ -12,6 +12,8 @@ namespace AutoBanco
         {
             Console.WriteLine("pedo");
             Console.WriteLine("HOLA PUCHI");
+            Console.WriteLine("Arremanguemonos");
+
             Console.ReadKey();
         }
     }
