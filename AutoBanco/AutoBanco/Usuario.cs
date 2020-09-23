@@ -8,5 +8,9 @@ namespace AutoBanco
 {
     class Usuario
     {
+        string nombre;
+        string numCuenta;
+        int pin;
+        int saldo;
     }
 }
