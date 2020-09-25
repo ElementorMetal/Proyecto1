@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace AutoBanco
 {
-    public class Usuario
+    class Usuario
     {
-        string nombre;
-        string numCuenta;
-        int pin;
-        int saldo;
+        //Estableciendo una clase "Ususario"
+        public string nombre;
+        public string numCuenta;
+        public int pin;
+        public int saldo;
     }
 }
