@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoBanco
 {
-    class Usuario
+    public class Usuario
     {
         string nombre;
         string numCuenta;

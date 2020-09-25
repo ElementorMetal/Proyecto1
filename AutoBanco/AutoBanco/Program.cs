@@ -12,11 +12,10 @@ namespace AutoBanco
         {
             Console.WriteLine("Hola Mundo");
             Console.WriteLine("Hola Putos");
-
-
             Console.WriteLine("Hola");
-
             Console.WriteLine("Hola Wapo");
+
+            Usuario ElmaMado = new Usuario();
 
             Console.ReadKey();
         }
