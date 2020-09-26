@@ -129,17 +129,17 @@ namespace AutoBanco
                                             if (usuarioDep == ElmaMado.numCuenta)
                                             {
                                                 ElmaMado.saldo = mntDep + ElmaMado.saldo;
-                                                Console.WriteLine("Se ha realizado el depósito con éxito");
+                                                Console.WriteLine("Se ha realizado el depósito con éxito \n");
                                             }
                                             else if (usuarioDep == Eddie.numCuenta)
                                             {
                                                 Eddie.saldo = mntDep + Eddie.saldo;
-                                                Console.WriteLine("Se ha realizado el depósito con éxito");
+                                                Console.WriteLine("Se ha realizado el depósito con éxito \n");
                                             }
                                             else if (usuarioDep == Roberto.numCuenta)
                                             {
                                                 Roberto.saldo = mntDep + Roberto.saldo;
-                                                Console.WriteLine("Se ha realizado el depósito con éxito");
+                                                Console.WriteLine("Se ha realizado el depósito con éxito \n");
                                             }
                                             else if (usuarioDep != ElmaMado.numCuenta && usuarioDep != Eddie.numCuenta && usuarioDep != Roberto.numCuenta)
                                             {
@@ -156,7 +156,7 @@ namespace AutoBanco
                                 else
                                 {
                                     // REINICIAR PROGRAMA
-                                    Console.WriteLine("Sus tres intentos han fallado, se le recomienda apuntar su PIN");
+                                    Console.WriteLine("Sus tres intentos han fallado, se le recomienda apuntar su PIN \n");
                                 }
 
 
