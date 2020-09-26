@@ -44,9 +44,9 @@ namespace AutoBanco
 
                 switch(opcionMenu)
                 {
-                    case 1:
+                    case 1: // Área Administrativa
                         break;
-                    case 2:
+                    case 2: // Estaciones de servicio
                         Console.WriteLine("Ingrese 1 si se encuentra en la estación 1 o 2 si está en la estación 2");
                         int sedeServ = 0, retirosSede1 = 0, transferenciasSede1 = 0 ;
                         string numCuenta = "";
@@ -147,9 +147,10 @@ namespace AutoBanco
                                             }
                                             break;
                                         case 4: //Transferencias
+
                                             break;
                                         default:
-                                            Console.WriteLine("Opción no válida");
+                                            Console.WriteLine("La opción que ingresó no existe");
                                             break;
                                     }
                                 }
@@ -158,19 +159,13 @@ namespace AutoBanco
                                     // REINICIAR PROGRAMA
                                     Console.WriteLine("Sus tres intentos han fallado, se le recomienda apuntar su PIN \n");
                                 }
-
-
-
-
-
-
-
                             }
                         }
                         break;
-                    case 3:
+                    case 3: // Reporte
                         break;
-                    case 4: Environment.Exit(0);
+                    case 4: // Salida
+                        Environment.Exit(0);
                         break;
                     default: Console.WriteLine("Datos incorrectos");
                         break;
