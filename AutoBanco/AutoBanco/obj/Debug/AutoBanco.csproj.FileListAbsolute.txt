@@ -1,0 +1,7 @@
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\bin\Debug\AutoBanco.exe.config
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\bin\Debug\AutoBanco.exe
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\bin\Debug\AutoBanco.pdb
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\obj\Debug\AutoBanco.csprojAssemblyReference.cache
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\obj\Debug\AutoBanco.csproj.CoreCompileInputs.cache
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\obj\Debug\AutoBanco.exe
+C:\Progra\Proyecto1\AutoBanco\AutoBanco\obj\Debug\AutoBanco.pdb
