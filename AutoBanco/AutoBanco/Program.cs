@@ -149,7 +149,7 @@ namespace AutoBanco
 
                                         switch (opcionConfigCuenta)
                                         {
-                                            case 1:
+                                            case 1: //Cambiar nombre
                                                 string nameCuenta = "";
 
                                                 Console.WriteLine("Ingrese el nuevo Nombre para su cuenta");
@@ -159,7 +159,7 @@ namespace AutoBanco
                                                 Console.WriteLine("Su nombre de usuario ahora es: " + ElmaMado.nombre);
                                                 validacionConfig = true;
                                                 break;
-                                            case 2:
+                                            case 2: // Cambiar PIN
                                                 Console.WriteLine("Ingrese el nuevo PIN");
                                                 nuevoPIN = int.Parse(Console.ReadLine());
                                                 ElmaMado.pin = nuevoPIN;
@@ -270,12 +270,12 @@ namespace AutoBanco
                             numCuenta = Console.ReadLine();
                             
                             string nombreCuenta = "";
-
+                            // Validar que la cuenta exista
                             if ((numCuenta == ElmaMado.numCuenta) || (numCuenta == Eddie.numCuenta) || (numCuenta == Roberto.numCuenta))
                             {
                                 int cont = 0;
                                 bool flag = false;
-
+                                // Validación de PIN
                                 while (cont < 4 && flag == false)
                                 {
                                     Console.WriteLine("Ingrese su PIN");
@@ -319,7 +319,7 @@ namespace AutoBanco
 
                                     int billetes50, billetes20, billetes1, montoCompra, montoVenta;
                                     int res50, res20;
-
+                                    // Menú de sede que está usando
                                     Console.WriteLine("Ingrese 1 para Compra/Venta de dólares \nIngrese 2 para retiros \nIngrese 3 para" +
                                         " depósitos \nIngrese 4 para transferencias");
                                     menuServicio = int.Parse(Console.ReadLine());
@@ -474,7 +474,7 @@ namespace AutoBanco
                                                             billetes20 = res50 / 20;
                                                             res20 = res50 % 20;
                                                             billetes1 = res20 / 1;
-
+                                                            // Verificar que las bóvedas tengan el saldo necesario
                                                             if (billetes50 < boveda50 && billetes20 < boveda20 && billetes1 < boveda1)
                                                             {
 
@@ -605,7 +605,7 @@ namespace AutoBanco
                                             {
                                                 Console.WriteLine("Ingrese el número de cuenta al que realizara el depósito");
                                                 usuarioDep = Console.ReadLine();
-
+                                                // Validar que las cuentas existan con IF
                                                 if (usuarioDep == ElmaMado.numCuenta)
                                                 {
                                                     Console.WriteLine("Ingrese el monto que depositará");
@@ -635,15 +635,15 @@ namespace AutoBanco
                                                     Console.WriteLine("Datos no coinciden");
                                                     valido = false;
                                                 }
-                                            }
+                                            } // Se aumenta el monto que hay en las bóvedas
                                             billetes50 = mntDep / 50;
                                             res50 = mntDep % 50;
                                             billetes20 = res50 / 20;
                                             res20 = res50 % 20;
                                             billetes1 = res20 / 1;
-                                            boveda50 = boveda50 + billetes50;
-                                            boveda20 = boveda20 + billetes20;
-                                            boveda1 = boveda1 + billetes1;
+                                            boveda50 += billetes50;
+                                            boveda20 += billetes20;
+                                            boveda1 += billetes1;
 
                                             break;
                                         case 4: //Transferencias
@@ -659,7 +659,7 @@ namespace AutoBanco
                                                 {
                                                     Console.WriteLine("Ingrese su PIN");
                                                     pinCuenta = int.Parse(Console.ReadLine());
-
+                                                    // Validar cuenta fuente y cuenta destino, verificar que la cuenta fuente posea el capital necesario
                                                     if(nCuenta == ElmaMado.numCuenta && pinCuenta == ElmaMado.pin)
                                                     {
                                                         Console.WriteLine("Ingrese el monto que desea transferir");
